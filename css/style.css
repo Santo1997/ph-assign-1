@@ -106,8 +106,83 @@ main {
   margin: 8px 0;
 }
 .cntntDtls-ul li .las {
-  color: #13fd02;
+  color: #00ff00;
   font-size: 14px;
+}
+
+.cntntAbt {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 40px auto 0;
+}
+.cntntAbt ul {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.cntntAbt ul li {
+  height: 230px;
+  width: 24%;
+  display: block;
+  list-style: none;
+  padding-top: 40px;
+  border-radius: 10px;
+}
+
+.liContent {
+  height: 95%;
+  width: 100%;
+  display: block;
+  background: #ffffff;
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.liContent .las {
+  background: #ffffff;
+  font-size: 30px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 5px solid;
+  position: absolute;
+  top: -22px;
+  left: 20px;
+}
+.liContent h3 {
+  color: #000000;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.liContent p {
+  color: #848484;
+}
+
+.diagram {
+  color: #ff8f73;
+  background: #ff8f73;
+  border: 2px solid #ff8f73;
+}
+
+.brain {
+  color: #79e2f2;
+  background: #79e2f2;
+  border: 2px solid #79e2f2;
+}
+
+.bullhorn {
+  color: #8777d9;
+  background: #8777d9;
+  border: 2px solid #8777d9;
+}
+
+.tasks {
+  color: #005fac;
+  background: #005fac;
+  border: 2px solid #005fac;
 }
 
 .contentPlan {
@@ -141,8 +216,12 @@ main {
   color: #005fac;
   border: 1px solid #005fac;
 }
+.inline-ul li:hover h3 {
+  color: #005fac;
+}
 .inline-ul li h3 {
-  font-size: 26px;
+  color: #000000;
+  font-size: 25px;
 }
 
 .cntntEnd {
@@ -187,7 +266,7 @@ main {
   margin: 20px 0;
 }
 .cntInfo > ul {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 2;
   list-style: none;
 }
@@ -198,9 +277,11 @@ main {
 }
 .ft-ul li {
   border: none;
+  opacity: 0.5;
 }
 .ft-ul li:hover {
   border: none;
+  opacity: 1;
 }
 
 .cntContent {
@@ -240,4 +321,9 @@ main {
   margin-top: 20px;
   background: #005fac;
   border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.cntForm input[type=submit]:hover {
+  opacity: 1;
 }
